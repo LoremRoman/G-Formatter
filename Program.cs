@@ -20,7 +20,7 @@ namespace G_Formatter
             var ext = new GEarthExtension(new GEarthOptions
             {
                 Name = "G-Formatter",
-                Description = "Text styling made simple.",
+                Description = "Text styling in Wired made simple.",
                 Author = "BigBenitocamelo",
                 Version = "1.0.0"
             });
@@ -34,6 +34,7 @@ namespace G_Formatter
 
             ext.Disconnected += () =>
             {
+
                 syncContext?.Post(_ =>
                 {
                     mainLogic.Stop();

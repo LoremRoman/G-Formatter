@@ -110,7 +110,7 @@ namespace G_Formatter.UI
             Panel btnPanel = new Panel
             {
                 Location = new Point(0, 22),
-                Size = new Size(this.Width, 48), // Altura justa para los botones
+                Size = new Size(this.Width, 48),
                 BackColor = Color.FromArgb(45, 45, 48)
             };
 
