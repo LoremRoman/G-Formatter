@@ -1,0 +1,7 @@
+# Carpetas de compilación
+bin/
+obj/
+build/
+.vs/
+*.user
+*.suo
