@@ -63,10 +63,12 @@ Press `Ctrl + Shift + S` at any time to open the Settings Panel. Here you can:
 
 ### Smart Menus in Action
 ![Main usage demo](docs/demo-main.gif)
+
 *Hover over buttons to reveal submenus and apply colors or clipboard actions seamlessly.*
 
 ### Settings & Opacity
 ![Settings demo](docs/demo-settings.gif)
+
 *Adjust the idle opacity or pause the extension completely using the new settings panel.*
 
 ## Supported BBCode Tags
