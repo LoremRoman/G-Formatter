@@ -7,7 +7,7 @@ namespace G_Formatter
     public class ExtensionMain
     {
         private string _name = "G-Formatter";
-        private string _version = "1.0.0";
+        private string _version = "1.1.0";
         private string _author = "BigBenitocamelo";
         private string _description = "Text styling in Wired made simple.";
 

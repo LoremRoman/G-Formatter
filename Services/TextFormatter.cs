@@ -7,12 +7,12 @@ namespace G_Formatter.Services
     {
         public static string ApplyFormatToggle(string text, BBCodeTag formatTag)
         {
-            return BBCodeParser.ToggleTag(text, formatTag);
+            return BBCodeParser.ToggleFormatAndRebuild(text, formatTag);
         }
 
         public static string ApplyColor(string text, BBCodeTag colorTag)
         {
-            return BBCodeParser.ChangeColor(text, colorTag);
+            return BBCodeParser.ChangeColorAndRebuild(text, colorTag);
         }
 
         public static string ClearAllFormat(string text)

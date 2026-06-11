@@ -22,7 +22,7 @@ namespace G_Formatter
                 Name = "G-Formatter",
                 Description = "Text styling in Wired made simple.",
                 Author = "BigBenitocamelo",
-                Version = "1.0.0"
+                Version = "1.1.0"
             });
 
             var mainLogic = new ExtensionMain();

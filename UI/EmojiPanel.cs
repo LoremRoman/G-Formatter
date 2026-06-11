@@ -10,6 +10,8 @@ namespace G_Formatter.UI
     {
         private const int EMOJI_SIZE = 38;
 
+        private FormatMenu _parentMenu;
+
         protected override CreateParams CreateParams
         {
             get
@@ -20,8 +22,10 @@ namespace G_Formatter.UI
             }
         }
 
-        public EmojiPanel(Form parentMenu)
+        public EmojiPanel(FormatMenu parentMenu)
         {
+            _parentMenu = parentMenu;
+
             this.FormBorderStyle = FormBorderStyle.None;
             this.ShowInTaskbar = false;
             this.TopMost = true;
@@ -79,6 +83,7 @@ namespace G_Formatter.UI
                 btn.Click += async (s, e) =>
                 {
                     await ClipboardHelper.PasteAndReselectAsync(emoji.Symbol, false);
+                    _parentMenu.UpdateMainEmojiIcon(emoji.VisualEmoji);
                 };
 
                 btn.MouseEnter += (s, e) => btn.BackColor = Color.FromArgb(0, 120, 215);
